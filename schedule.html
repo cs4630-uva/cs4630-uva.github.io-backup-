@@ -10,6 +10,16 @@ l
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family='Lato'">
   <link href="static/css/bootstrap.css" rel="stylesheet" media="screen">
   <link href="static/css/custom.css" rel="stylesheet" media="screen">
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+	<style>
+		.lato-light-font {
+			font-family: 'Lato', sans-serif;
+			font-weight: 300; /* Light */
+		}
+	</style>
 </head>
 
 <body>
@@ -36,7 +46,7 @@ l
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container lato-light-font">
       <h1>Course Schedule <span class="pull-right text-muted"><small>Fall 2023</small></span></h1>
       <p>This schedule is subject to change. Please check back frequently. Major changes will be announced in class.</p>
       <br>
@@ -45,240 +55,215 @@ l
       </p>
       <center>
         <div class="table-responsive">
+
           <table class="table table-bordered table-hover table-condensed">
-            <tr>
-              <th align="center">Date</th>
-              <th>Lecture</th>
-              <th>Optional Readings</th>
-              <th>Comments</th>
-            </tr>
-
-            <tr>
-              <td align="center"> Aug. 23 </td>
-              <td>
-                Course Intro / Administrivia
-              </td>
-              <td> <a href="https://www.schneier.com/blog/archives/2008/03/the_security_mi_1.html"> The Security Mindset
-                </a> </td>
-              <td>Assignment-0 released</td>
-            </tr>
-
-            <tr>
-              <td align="center"> Aug. 25</td>
-              <td>Authentication I (Dictionary Attacks, Password Salt)</td>
-              <td><a href="https://jbonneau.com/doc/DBCBW14-NDSS-tangled_web.pdf"> The Tangled Web of Password Reuse
-                </a></td>
-              <td>&nbsp;</td>
-            </tr>
-
-            <tr>
-              <td align="center"> Aug. 30</td>
-              <td>Authentication II (Honeywords, Needham-Schroeder Protocol)</td>
-              <td> <a href="https://people.csail.mit.edu/rivest/pubs/JR13.pdf"> Honeywords: Making Password-Cracking
-                  Detectable </a> </td>
-              <td>Assignment-1 released</td>
+            <tr style="background-color: rgb(205, 205, 205);">
+                <th align="center">Date</th>
+                <th>Lecture</th>
+                <th>Assignments</th>
             </tr>
             <tr>
-              <td align="center"> Sept. 1</td>
-              <td class="warning">IA-32 Architecture</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-            </tr>
-
-            <tr>
-              <td align="center">Sept. 6</td>
-              <td class="warning">Buffer Overflow</td>
-              <td><a href="https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf">Smashing The Stack For
-                  Fun And Profit, Aleph One </a></td>
-              <td>Assignment-2 released</td>
-            </tr>
-
-            <tr>
-              <td align="center">Sept. 8</td>
-              <td class="warning">Shellcode Injection</td>
-
-              <td> <a href="https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf"> SoK: Eternal War in
-                  Memory </a> </td>
-              <td>&nbsp;</td>
-            </tr>
-
-            <tr>
-              <td align="center">Sept. 13</td>
-              <td class="warning">Stack Canaries, ASLR, DEP</td>
-              <td>&nbsp;</td>
-              <td>Assignment-3 released</td>
-            </tr>
-
-            <tr>
-              <td align="center">Sept. 15</td>
-              <td class="warning">Format String Vulnerability, UAF</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-            </tr>
-
-            <tr>
-              <td align="center">Sept. 20</td>
-              <td class="warning">Return-to-libc, Return Oriented Programming (ROP)</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-            </tr>
-
-            <tr>
-              <td align="center">Sept. 22</td>
-              <td class="warning">Control-flow Integrity I</td>
-              <td> <a href="p340-abadi.pdf"> Control-Flow Integrity </a> </td>
-              <td>&nbsp;</td>
-            </tr>
-
-            <tr>
-              <td align="center">Sept. 27</td>
-              <td class="warning">Control-flow Integrity II & Assignment 4 Walkthrough</td>
-              <td>&nbsp;</td>
-              <td>Assignment-4 released</td>
-            </tr>
-
-            <tr>
-              <td align="center">Sept. 29</td>
-              <td class="warning">Malware</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-            </tr>
-
-            <tr>
-              <td align="center">Oct. 4</td>
-              <td>No Class - Fall Reading Day</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-            </tr>
-
-            <tr>
-              <td align="center">Oct. 6</td>
-              <td> <strong style="color:red;">Midterm Exam</strong> </td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-            </tr>
-
-            <tr>
-              <td align="center">Oct. 11</td>
-              <td class="active">Assignment-5 Walkthrough</td>
-              <td>&nbsp;</td>
-              <td>Assignment-5 released</td>
-            </tr>
-
-            <tr>
-              <td align="center">Oct. 13</td>
-              <td class="active">Audit Logging</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-            </tr>
-
-            <tr>
-              <td align="center">Oct. 18</td>
-              <td class="active">Intrusion Detection</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+                <td align="center"> Aug. 22 </td>
+                <td> <strong> Course Intro / Administrivia </strong> <br>
+                    Optional Reading: <a href="https://www.schneier.com/blog/archives/2008/03/the_security_mi_1.html">🔗 1</a>
+                </td>
+                <td><span class="label label-default">Assignment-0 released</span></td>
             </tr>
             <tr>
-              <td align="center">Oct. 25</td>
-              <td class="active">Digital Forensics and Assignment-6 Walkthrough</td>
-              <td>&nbsp;</td>
-              <td>Assignment-6 released</td>
+                <td align="center"> Aug. 24</td>
+                <td> <strong>Authentication I </strong><br>
+                    Optional Reading: <a href="https://jbonneau.com/doc/DBCBW14-NDSS-tangled_web.pdf">🔗 1</a>
+                </td>
+                <td>&nbsp;</td>
             </tr>
+            <tr>
+                <td align="center"> Aug. 29</td>
+                <td><strong>Authentication II </strong><br>
+                    Optional Reading: <a href="https://people.csail.mit.edu/rivest/pubs/JR13.pdf">🔗 1</a>
+                </td>
+                <td><span class="label label-default">Assignment-1 released</span> </td>
+            </tr>
+
+    <!-- Module 1 -->
+    <tr>
+      <th colspan="3" style="font-family: Pacifico; font-weight: normal; text-align: center;" class="warning">Module 1: Software Security</th>
+  </tr>
+            <tr>
+                <td align="center"> Aug. 31</td>
+                <td ><strong>IA-32 Architecture</strong></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center">Sept. 5</td>
+                <td ><strong>Buffer Overflow</strong><br>
+                    Optional Reading: <a href="https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf">🔗 1</a>
+                </td>
+                <td><span class="label label-default">Assignment-2 released</span></td>
+            </tr>
+            <tr>
+                <td align="center">Sept. 7</td>
+                <td > <strong>Shellcode Injection </strong><br>
+                    Optional Reading: <a href="https://inst.eecs.berkeley.edu/~cs161/fa08/papers/stack_smashing.pdf">🔗 1</a>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center">Sept. 12</td>
+                <td > <strong> Stack Canaries, ASLR, DEP </strong></td>
+                <td><span class="label label-default">Assignment-3 released</span></td>
+            </tr>
+            <tr>
+                <td align="center">Sept. 14</td>
+                <td> <strong> Format String Vulnerability, UAF </strong></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center">Sept. 19</td>
+                <td > <strong> Return-to-libc, ROP</strong></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center">Sept. 21</td>
+                <td > <strong> Control-flow Integrity I </strong><br>
+                    Optional Reading: <a href="p340-abadi.pdf">🔗 1</a>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center">Sept. 26</td>
+                <td > <strong> Control-flow Integrity II </strong></td>
+                <td><span class="label label-default">Assignment-4 released</span></td>
+            </tr>
+            <tr>
+                <td align="center">Sept. 28</td>
+                <td> <strong> Malware </strong></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center">Oct. 3</td>
+                <td>No Class - Fall Reading Day 🍂</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center">Oct. 5</td>
+                <td><strong style="color:red;">Midterm Exam 📕</strong></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center">Oct. 10</td>
+                <td>Assignment-5 Walkthrough</td>
+                <td><span class="label label-default">Assignment-5 released</span></td>
+            </tr>
+
+    <!-- Module 2 -->
+    <tr>
+      <th colspan="3" style="font-family: Pacifico; font-weight: normal; text-align: center;" class="active" >Module 2: Threat Detection And Forensics</th>
+  </tr>
+            <tr>
+                <td align="center">Oct. 12</td>
+                <td> <strong> Audit Logging </strong></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center">Oct. 17</td>
+                <td> <strong> Intrusion Detection I </strong></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center">Oct. 19</td>
+                <td> <strong> Intrusion Detection II </strong> </td>
+                <td><span class="label label-default">Assignment-6 released</span></td>
+            </tr>
+            <tr>
+                <td align="center">Oct. 24</td>
+                <td> <strong> Digital Forensics</strong> </td>
+                <td>&nbsp;</td>
+            </tr>
+
+    <!-- Module 3 -->
+    <tr>
+      <th colspan="3" style="font-family: Pacifico; font-weight: normal; text-align: center;" class="danger">Module 3: Web Security</th>
+  </tr>
 
             <tr>
-              <td align="center">Oct. 27</td>
-              <td class="danger">The Web</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+                <td align="center">Oct. 26</td>
+                <td > <strong> Web Security I </strong> <br>
+                    Optional Reading: <a href="https://www.smashingmagazine.com/2010/01/web-security-primer-are-you-part-of-the-problem/">🔗 1</a>
+                </td>
+                <td>&nbsp;</td>
             </tr>
-
             <tr>
-              <td align="center">Nov. 1</td>
-              <td class="danger">Web Security I</td>
-              <td><a href="https://www.smashingmagazine.com/2010/01/web-security-primer-are-you-part-of-the-problem/">
-                  Web Security: Are You Part Of The Problem? </a></td>
-              <td>&nbsp;</td>
+                <td align="center">Oct. 31</td>
+                <td> <strong> Web Security II </strong> </td>
+                <td>&nbsp;</td>
             </tr>
-
             <tr>
-              <td align="center">Nov. 3</td>
-              <td>No Class</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+                <td align="center">Nov. 2</td>
+                <td > <strong> Web Security III </strong> </td>
+                <td><span class="label label-default">Assignment-7 released</span></td>
             </tr>
-
             <tr>
-              <td align="center">Nov. 8</td>
-              <td> No Class - Election Day </td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+                <td align="center">Nov. 7</td>
+                <td>No Class - Election Day 🗳️</td>
+                <td>&nbsp;</td>
             </tr>
-
             <tr>
-              <td align="center">Nov. 10</td>
-              <td class="danger">Web Security II</td>
-              <td>&nbsp;</td>
-              <td>Assignment-7 released</td>
+                <td align="center">Nov. 9</td>
+                <td > <strong> Cross-Site Scripting (XSS) </strong> </td>
+                <td>&nbsp;</td>
             </tr>
-
             <tr>
-              <td align="center">Nov. 15</td>
-              <td>No Class</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+                <td align="center">Nov. 14</td>
+                <td > <strong> Cross-Site Request Forgery (CSRF) </strong> </td>
+                <td>&nbsp;</td>
             </tr>
-
             <tr>
-              <td align="center">Nov. 17</td>
-              <td class="danger">SQL Injection</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+                <td align="center">Nov. 16</td>
+                <td > <strong> Clickjacking </strong> </td>
+                <td>&nbsp;</td>
             </tr>
-
+   <!-- Module 4 -->
+    
+   <tr>
+    <th colspan="3" style="font-family: Pacifico; font-weight: normal; text-align: center;" class="success" >Module 4: Network Security</th>
+</tr>
             <tr>
-              <td align="center">Nov. 22</td>
-              <td class="danger"> Cloud Computing Security</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-
+                <td align="center">Nov. 21</td>
+                <td ><strong> Network Basics </strong></td>
+                <td>&nbsp;</td>
             </tr>
-
             <tr>
-              <td align="center">Nov. 24</td>
-              <td> No Class - Thanksgiving recess </td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+                <td align="center">Nov. 23</td>
+                <td>No Class - Thanksgiving 🦃</td>
+                <td>&nbsp;</td>
             </tr>
-
+ 
             <tr>
-              <td align="center">Nov. 29</td>
-              <td class="danger">DoS</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-            </tr>
+                <td align="center">Nov. 28</td>
+                <td > <strong> Network Security I </strong></td>
+                <td><span class="label label-default">Assignment-8 released</span></td>
 
+            </tr>
             <tr>
-              <td align="center">Dec. 1</td>
-              <td class="danger">DDoS & Firewalls</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+                <td align="center">Nov. 30</td>
+                <td> <strong> VPN, Firewalls </strong> </td>
+                <td>&nbsp;</td>
             </tr>
-
             <tr>
-              <td align="center">Dec. 6</td>
-              <td> Course Wrap up </td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+                <td align="center">Dec. 5</td>
+                <td > <strong>Tor and Anonymity Networks </strong><br>
+                    Optional Reading: <a href="https://www.torproject.org/about/overview/">🔗 1</a>
+                </td>
+                <td>&nbsp;</td>
             </tr>
-
             <tr>
-              <td align="center">Dec. 10</td>
-              <td> <strong style="color:red;">Final Exam</strong></td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
+                <td align="center">TBD</td>
+                <td><strong style="color:red;">Final Exam 📝</strong></td>
+                <td>&nbsp;</td>
             </tr>
-
-          </table>
+        </table>
+        
+            
         </div>
       </center>
     </div>
